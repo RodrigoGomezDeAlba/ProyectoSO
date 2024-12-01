@@ -14,7 +14,6 @@ namespace ProyectoFinal
 {
     public partial class FormSCAN : Form
     {
-        const int limite = 5000;        //se declara el maximo de cilindros que se van a usar
         int mov = 0;
         List<int> solicitudes = new List<int>();    //se declara el arreglo que almacenara las solicitudes aleatorias
 
@@ -25,7 +24,6 @@ namespace ProyectoFinal
 
         public FormSCAN(List<int> ordenada, int movTot)
         {
-
             this.solicitudes = ordenada;
             this.mov = movTot;
             InitializeComponent();

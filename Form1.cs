@@ -107,6 +107,73 @@ namespace ProyectoFinal
             return new ResultadosSCAN { ListaOrdenada = ordenado, movimientosTotales = movTot };
         }
 
+        // Método para aplicar el algoritmo C-SCAN
+        public ResultadosSCAN algoritmoCSCAN(int posicion, int[] solicitudes, bool direccion, int limite)
+        {
+            Array.Sort(solicitudes); // Se ordena el arreglo en forma ascendente
+
+            // Se crean dos listas para dividir las solicitudes
+            List<int> arriba = new List<int>();
+            List<int> abajo = new List<int>();
+
+            // Clasificar las solicitudes en las listas correspondientes
+            foreach (var solicitud in solicitudes)
+            {
+                if (solicitud < posicion)
+                {
+                    abajo.Add(solicitud);
+                }
+                else
+                {
+                    arriba.Add(solicitud);
+                }
+            }
+
+            // Agregar los límites del disco para simular correctamente el algoritmo
+            if (!abajo.Contains(0))
+            {
+                abajo.Add(0);
+            }
+            if (!arriba.Contains(limite - 1))
+            {
+                arriba.Add(limite - 1);
+            }
+
+            // Ordenar las listas
+            abajo.Sort();
+            arriba.Sort();
+
+            // Lista final para solicitudes ordenadas
+            List<int> ordenado = new List<int>();
+
+            // Dirección hacia arriba
+            if (direccion)
+            {
+                // Recorrer hacia arriba, saltar al inicio, y recorrer hacia arriba nuevamente
+                ordenado.AddRange(arriba);
+                ordenado.AddRange(abajo);
+            }
+            else
+            {
+                // Dirección hacia abajo
+                // Recorrer hacia abajo, saltar al final, y recorrer hacia abajo nuevamente
+                abajo.Reverse(); // Ordenar la lista abajo en orden descendente
+                ordenado.AddRange(abajo);
+                ordenado.AddRange(arriba);
+            }
+
+            // Calcular movimientos totales
+            int movTot = 0;
+            movTot += Math.Abs(posicion - ordenado[0]); // Movimiento inicial
+
+            for (int i = 0; i < ordenado.Count - 1; i++)
+            {
+                movTot += Math.Abs(ordenado[i] - ordenado[i + 1]);
+            }
+
+            return new ResultadosSCAN { ListaOrdenada = ordenado, movimientosTotales = movTot };
+        }
+
         private void radioButtonArriba_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -178,6 +245,11 @@ namespace ProyectoFinal
             else if (radioButtonCSCAN.Checked)
             {
                 //aqui se abriria la pantalla de este algoritmo
+                var resultado = algoritmoCSCAN(posicion, solicitudes, arriba, limite); // Ejecuta el algoritmo C-SCAN
+                FormCSCAN Res = new FormCSCAN(resultado.ListaOrdenada, resultado.movimientosTotales, posicion, solicitudes.ToList()); // Llama a la pantalla C-SCAN
+                this.Hide();
+                Res.ShowDialog();
+                this.Show();
             }
             else
             {
