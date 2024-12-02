@@ -7,31 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
+
 
 namespace ProyectoFinal
 {
-    public partial class FormCSCAN : Form
+    public partial class FormSCAN : Form
     {
         int mov = 0;
-        List<int> solicitudesOrdenadas;    //se declara el arreglo que almacenara las solicitudes aleatorias
+        List<int> solicitudes = new List<int>();    //se declara el arreglo que almacenara las solicitudes aleatorias
         int posInicial = 0;
         List<int> solicitudesOriginales;
 
-        public FormCSCAN()
+        public FormSCAN()
         {
             InitializeComponent();
         }
 
-        public FormCSCAN(List<int> ordenada, int movTot, int posicion, List<int> originales)
+        public FormSCAN(List<int> ordenada, int movTot, int posicion, int[] originales)
         {
-            this.solicitudesOrdenadas = ordenada;
-            this.solicitudesOriginales = originales;
+            this.solicitudes = ordenada;
+            this.solicitudesOriginales = originales.ToList();
             this.mov = movTot;
             this.posInicial = posicion;
             InitializeComponent();
         }
 
-        private void FormCSCAN_Load(object sender, EventArgs e)
+        private void FormSCAN_Load(object sender, EventArgs e)
         {
             // Mostrar la posición inicial
             labelPosIn.Text = "Posición inicial: " + posInicial.ToString();
@@ -45,7 +47,7 @@ namespace ProyectoFinal
 
             // Mostrar la cola de solicitudes **ordenada**
             listBoxCola.Items.Add("Solicitudes Ordenadas:");
-            foreach (var solicitud in solicitudesOrdenadas)
+            foreach (var solicitud in solicitudes)
             {
                 listBoxCola.Items.Add(solicitud);
             }
@@ -57,6 +59,11 @@ namespace ProyectoFinal
         private void buttonRegresar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void labelMov_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

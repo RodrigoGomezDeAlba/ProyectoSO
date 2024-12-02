@@ -33,6 +33,8 @@
             labelMov = new Label();
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             sqlCommand2 = new Microsoft.Data.SqlClient.SqlCommand();
+            listBoxCola = new ListBox();
+            labelPosIn = new Label();
             SuspendLayout();
             // 
             // labelTitulo
@@ -74,11 +76,33 @@
             sqlCommand2.CommandTimeout = 30;
             sqlCommand2.EnableOptimizedParameterBinding = false;
             // 
+            // listBoxCola
+            // 
+            listBoxCola.FormattingEnabled = true;
+            listBoxCola.ItemHeight = 15;
+            listBoxCola.Location = new Point(36, 266);
+            listBoxCola.Margin = new Padding(2, 1, 2, 1);
+            listBoxCola.Name = "listBoxCola";
+            listBoxCola.Size = new Size(100, 124);
+            listBoxCola.TabIndex = 10;
+            // 
+            // labelPosIn
+            // 
+            labelPosIn.AutoSize = true;
+            labelPosIn.Location = new Point(36, 236);
+            labelPosIn.Margin = new Padding(2, 0, 2, 0);
+            labelPosIn.Name = "labelPosIn";
+            labelPosIn.Size = new Size(89, 15);
+            labelPosIn.TabIndex = 9;
+            labelPosIn.Text = "Posicion Inicial:";
+            // 
             // FormSCAN
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(listBoxCola);
+            Controls.Add(labelPosIn);
             Controls.Add(labelMov);
             Controls.Add(buttonRegresar);
             Controls.Add(labelTitulo);
@@ -97,5 +121,7 @@
         private Label labelMov;
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand2;
+        private ListBox listBoxCola;
+        private Label labelPosIn;
     }
 }
