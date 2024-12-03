@@ -101,6 +101,8 @@ namespace ProyectoFinal
             List<int> ordenado = new List<int>();
 
             //recorrer las solicitudes dependiendo de la direccion seleccionada
+            
+            ordenado.Add(posicion);
 
             //direccion hacia arriba
 
@@ -166,6 +168,7 @@ namespace ProyectoFinal
             // Lista final para solicitudes ordenadas
             List<int> ordenado = new List<int>();
 
+            ordenado.Add(posicion);
             // Dirección hacia arriba
             if (direccion)
             {

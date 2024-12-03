@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="HIC.System.Windows.Forms.DataVisualization" Version="1.0.1" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
-    <PackageReference Include="WinForms.DataVisualization" Version="1.9.2" />
+    <PackageReference Include="ScottPlot.WinForms" Version="5.0.47" />
   </ItemGroup>
 
 </Project>

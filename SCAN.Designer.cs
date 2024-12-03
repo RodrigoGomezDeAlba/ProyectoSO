@@ -35,6 +35,9 @@
             sqlCommand2 = new Microsoft.Data.SqlClient.SqlCommand();
             listBoxCola = new ListBox();
             labelPosIn = new Label();
+            panel1 = new Panel();
+            formsPlot1 = new ScottPlot.WinForms.FormsPlot();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // labelTitulo
@@ -83,24 +86,42 @@
             listBoxCola.Location = new Point(36, 266);
             listBoxCola.Margin = new Padding(2, 1, 2, 1);
             listBoxCola.Name = "listBoxCola";
-            listBoxCola.Size = new Size(100, 124);
+            listBoxCola.Size = new Size(155, 124);
             listBoxCola.TabIndex = 10;
             // 
             // labelPosIn
             // 
             labelPosIn.AutoSize = true;
-            labelPosIn.Location = new Point(36, 236);
+            labelPosIn.Location = new Point(36, 234);
             labelPosIn.Margin = new Padding(2, 0, 2, 0);
             labelPosIn.Name = "labelPosIn";
             labelPosIn.Size = new Size(89, 15);
             labelPosIn.TabIndex = 9;
             labelPosIn.Text = "Posicion Inicial:";
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(formsPlot1);
+            panel1.Location = new Point(384, 21);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(349, 228);
+            panel1.TabIndex = 11;
+            // 
+            // formsPlot1
+            // 
+            formsPlot1.DisplayScale = 1F;
+            formsPlot1.Location = new Point(0, 0);
+            formsPlot1.Name = "formsPlot1";
+            formsPlot1.Size = new Size(349, 228);
+            formsPlot1.TabIndex = 0;
+            formsPlot1.Load += formsPlot1_Load;
+            // 
             // FormSCAN
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(listBoxCola);
             Controls.Add(labelPosIn);
             Controls.Add(labelMov);
@@ -110,6 +131,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             Load += FormSCAN_Load;
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -123,5 +145,7 @@
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand2;
         private ListBox listBoxCola;
         private Label labelPosIn;
+        private Panel panel1;
+        private ScottPlot.WinForms.FormsPlot formsPlot1;
     }
 }
