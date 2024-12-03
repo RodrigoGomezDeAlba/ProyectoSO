@@ -33,6 +33,9 @@
             labelPos = new Label();
             listBoxCola = new ListBox();
             buttonRegresar = new Button();
+            panel1 = new Panel();
+            formsPlot1 = new ScottPlot.WinForms.FormsPlot();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // labelResultados
@@ -68,7 +71,7 @@
             listBoxCola.ItemHeight = 15;
             listBoxCola.Location = new Point(37, 240);
             listBoxCola.Name = "listBoxCola";
-            listBoxCola.Size = new Size(120, 94);
+            listBoxCola.Size = new Size(146, 154);
             listBoxCola.TabIndex = 3;
             // 
             // buttonRegresar
@@ -81,11 +84,28 @@
             buttonRegresar.UseVisualStyleBackColor = true;
             buttonRegresar.Click += buttonRegresar_Click;
             // 
+            // panel1
+            // 
+            panel1.Controls.Add(formsPlot1);
+            panel1.Location = new Point(362, 45);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(349, 228);
+            panel1.TabIndex = 12;
+            // 
+            // formsPlot1
+            // 
+            formsPlot1.DisplayScale = 1F;
+            formsPlot1.Location = new Point(0, 0);
+            formsPlot1.Name = "formsPlot1";
+            formsPlot1.Size = new Size(349, 228);
+            formsPlot1.TabIndex = 0;
+            // 
             // FCFS
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(buttonRegresar);
             Controls.Add(listBoxCola);
             Controls.Add(labelPos);
@@ -94,6 +114,7 @@
             Name = "FCFS";
             Text = "Form4";
             Load += FCFS_Load;
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -105,5 +126,7 @@
         private Label labelPos;
         private ListBox listBoxCola;
         private Button buttonRegresar;
+        private Panel panel1;
+        private ScottPlot.WinForms.FormsPlot formsPlot1;
     }
 }

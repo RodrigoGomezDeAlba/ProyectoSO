@@ -15,7 +15,7 @@ namespace ProyectoFinal
         int mov = 0;
         List<int> solicitudes = new List<int>();
         int posInicial = 0;
-
+        int totalSolicitudes = 0;
 
         public FCFS()
         {
@@ -27,7 +27,25 @@ namespace ProyectoFinal
             this.solicitudes = ordenada;
             this.mov = movTot;
             this.posInicial = posicion;
+            totalSolicitudes = solicitudes.Count;   //se saca el total de solicitudes
+
+            ordenada.Insert(0, posicion);
+            double[] valoresY = new double[totalSolicitudes];   //se crea un vector de tipo double para poder pasarlo a la grafica
+            for (int i = 0; i < totalSolicitudes; i++)   //se llena el vector desde 1 hasta el total de solicitudes
+            {
+                valoresY[i] = i + 1;
+            }
+            double[] vectorX = ordenada.ConvertAll(item => (double)item).ToArray(); //se convierte la lista ordena a double y a vector para pasarlo a la grafica
             InitializeComponent();
+            var scatter = formsPlot1.Plot.Add.Scatter(vectorX, valoresY);   //se mandan los vectores a la grafica
+
+            // Configura el gráfico
+            formsPlot1.Plot.Title("Movimiento del cabezal");
+            formsPlot1.Plot.XLabel("Posicion del cabezal");
+            formsPlot1.Plot.YLabel("Solicitudes");
+
+            // Actualiza para mostrar los cambios
+            formsPlot1.Refresh();
         }
 
         private void FCFS_Load(object sender, EventArgs e)
