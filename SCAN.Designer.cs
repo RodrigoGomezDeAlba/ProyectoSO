@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             labelTitulo = new Label();
             buttonRegresar = new Button();
             labelMov = new Label();
@@ -37,6 +38,9 @@
             labelPosIn = new Label();
             panel1 = new Panel();
             formsPlot1 = new ScottPlot.WinForms.FormsPlot();
+            panel2 = new Panel();
+            timer1 = new System.Windows.Forms.Timer(components);
+            labelPosActual = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -102,7 +106,7 @@
             // panel1
             // 
             panel1.Controls.Add(formsPlot1);
-            panel1.Location = new Point(384, 21);
+            panel1.Location = new Point(266, 21);
             panel1.Name = "panel1";
             panel1.Size = new Size(349, 228);
             panel1.TabIndex = 11;
@@ -116,11 +120,35 @@
             formsPlot1.TabIndex = 0;
             formsPlot1.Load += formsPlot1_Load;
             // 
+            // panel2
+            // 
+            panel2.Location = new Point(658, 33);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(250, 250);
+            panel2.TabIndex = 12;
+            panel2.Paint += panel2_Paint;
+            // 
+            // timer1
+            // 
+            timer1.Interval = 500;
+            timer1.Tick += timer1_Tick;
+            // 
+            // labelPosActual
+            // 
+            labelPosActual.AutoSize = true;
+            labelPosActual.Location = new Point(649, 11);
+            labelPosActual.Name = "labelPosActual";
+            labelPosActual.Size = new Size(38, 15);
+            labelPosActual.TabIndex = 13;
+            labelPosActual.Text = "label1";
+            // 
             // FormSCAN
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(938, 565);
+            Controls.Add(labelPosActual);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(listBoxCola);
             Controls.Add(labelPosIn);
@@ -147,5 +175,8 @@
         private Label labelPosIn;
         private Panel panel1;
         private ScottPlot.WinForms.FormsPlot formsPlot1;
+        private Panel panel2;
+        private System.Windows.Forms.Timer timer1;
+        private Label labelPosActual;
     }
 }
