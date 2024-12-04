@@ -37,6 +37,12 @@ namespace ProyectoFinal
             this.mov = movTot;  //se pasa el movimiento total del cabezal
             this.posInicial = posicion; //se pasa la posicion inicial del cabezal
 
+            mov = Math.Abs(posInicial - solicitudes[0]); // Movimiento inicial desde la posición actual
+            for (int i = 0; i < solicitudes.Count - 1; i++)
+            {
+                mov += Math.Abs(solicitudes[i] - solicitudes[i + 1]);
+            }
+
             totalSolicitudes = solicitudes.Count;   //se saca el total de solicitudes
             double[] valoresY = new double[totalSolicitudes];   //se crea un vector de tipo double para poder pasarlo a la grafica
             for (int i = 0; i < totalSolicitudes; i++)   //se llena el vector desde 1 hasta el total de solicitudes

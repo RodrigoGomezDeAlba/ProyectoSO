@@ -35,6 +35,13 @@ namespace ProyectoFinal
             this.mov = movTot;
             this.posInicial = posicion;
 
+            movTot += Math.Abs(posicion - ordenada[0]); // Movimiento inicial
+            for (int i = 0; i < ordenada.Count - 1; i++)
+            {
+                movTot += Math.Abs(ordenada[i] - ordenada[i + 1]); // Distancia entre solicitudes consecutivas
+            }
+
+
             totalSolicitudes = solicitudes.Count;   //se saca el total de solicitudes
             double[] valoresY = new double[totalSolicitudes];   //se crea un vector de tipo double para poder pasarlo a la grafica
             for (int i = 0; i < totalSolicitudes; i++)   //se llena el vector desde 1 hasta el total de solicitudes
