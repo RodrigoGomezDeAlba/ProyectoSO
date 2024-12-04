@@ -121,8 +121,8 @@ namespace ProyectoFinal
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            int radioBase = 50;
-            int incrementoRadio = 50;
+            int radioBase = 100;
+            int incrementoRadio = 100;
 
             //tamano del panel
             int panelWidth = panel2.Width;
@@ -133,7 +133,7 @@ namespace ProyectoFinal
             int centroY = panelHeight / 2;
 
             //radio mas grande
-            int radio = 250;
+            int radio = 500;
 
             //se declara el numero de circulos, cada circulo son 500 cilindros
             int numCirculos = 10;
@@ -172,39 +172,39 @@ namespace ProyectoFinal
                 radioCabezal = 0;
             }else if(posicionActual >=500 && posicionActual < 1000)
             {
-                radioCabezal = 25;
+                radioCabezal = 50;
             }else if(posicionActual >= 1000 && posicionActual < 1500)
             {
-                radioCabezal = 35;
+                radioCabezal = 70;
             }else if (posicionActual >= 1500 && posicionActual < 2000)
             {
-                radioCabezal = 50;
+                radioCabezal = 100;
             }else if (posicionActual >= 2000 && posicionActual < 2500)
             {
-                radioCabezal = 62;
+                radioCabezal = 114;
             }else if (posicionActual >= 2500 && posicionActual < 3000)
             {
-                radioCabezal = 75;
+                radioCabezal = 150;
             }
             else if (posicionActual >= 3000 && posicionActual < 3500)
             {
-                radioCabezal = 87;
+                radioCabezal = 174;
             }
             else if (posicionActual >= 3500 && posicionActual < 4000)
             {
-                radioCabezal = 99;
+                radioCabezal = 198;
             }
             else if (posicionActual >= 4000 && posicionActual < 4500)
             {
-                radioCabezal = 112;
+                radioCabezal = 224;
             }
             else if (posicionActual >= 4500 && posicionActual < 5000)
             {
-                radioCabezal = 125;
+                radioCabezal = 250;
             }
             
 
-            g.FillRectangle(Brushes.Red, centroX - radioCabezal, centroY-5, 10, 10);
+            g.FillRectangle(Brushes.Red, centroX - radioCabezal, centroY-10, 18, 18);
         }
 
         private void timer1_Tick(object sender, EventArgs e)

@@ -3,36 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|c:\\users\\rodri\\desktop\\proyectoso\\proyectofinal\\proyectoso\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|solutionrelative:principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|c:\\users\\rodri\\desktop\\proyectoso\\proyectofinal\\proyectoso\\fcfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|solutionrelative:fcfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|c:\\users\\rodri\\desktop\\proyectoso\\proyectofinal\\proyectoso\\cscan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|solutionrelative:cscan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|c:\\users\\rodri\\desktop\\proyectoso\\proyectofinal\\proyectoso\\fcfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|solutionrelative:fcfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|solutionrelative:principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|c:\\users\\rodri\\desktop\\proyectoso\\proyectofinal\\proyectoso\\scan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|solutionrelative:scan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\scan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|solutionrelative:scan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\fcfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|solutionrelative:fcfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\cscan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|c:\\users\\rodri\\desktop\\proyectoso\\proyectofinal\\proyectoso\\cscan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|solutionrelative:cscan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\scan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{07889472-8550-4D2C-8745-061580E77285}|ProyectoFinal.csproj|solutionrelative:scan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,32 +34,68 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Principal.cs",
-              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\Principal.cs",
-              "RelativeDocumentMoniker": "Principal.cs",
-              "ToolTip": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\Principal.cs",
-              "RelativeToolTip": "Principal.cs",
-              "ViewState": "AgIAAPwAAAAAAAAAAAAiwPsAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T02:33:02.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "SCAN.cs",
               "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\SCAN.cs",
               "RelativeDocumentMoniker": "SCAN.cs",
               "ToolTip": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\SCAN.cs",
               "RelativeToolTip": "SCAN.cs",
-              "ViewState": "AgIAAMoAAAAAAAAAAAAwwNAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAwwMEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:16:55.082Z",
+              "WhenOpened": "2024-12-04T09:09:59.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CSCAN.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\CSCAN.cs",
+              "RelativeDocumentMoniker": "CSCAN.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\CSCAN.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CSCAN.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T08:07:31.804Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FCFS.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\FCFS.cs",
+              "RelativeDocumentMoniker": "FCFS.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\FCFS.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FCFS.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T01:32:02.253Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SCAN.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\SCAN.cs",
+              "RelativeDocumentMoniker": "SCAN.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\SCAN.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SCAN.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T02:20:05.026Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FCFS.cs",
+              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\FCFS.cs",
+              "RelativeDocumentMoniker": "FCFS.cs",
+              "ToolTip": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\FCFS.cs",
+              "RelativeToolTip": "FCFS.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAAFgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T08:06:49.491Z",
               "EditorCaption": ""
             },
             {
@@ -78,68 +106,10 @@
               "RelativeDocumentMoniker": "CSCAN.cs",
               "ToolTip": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\CSCAN.cs",
               "RelativeToolTip": "CSCAN.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAAIgAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T03:51:16.708Z",
+              "WhenOpened": "2024-12-04T08:39:55.399Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FCFS.cs",
-              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\FCFS.cs",
-              "RelativeDocumentMoniker": "FCFS.cs",
-              "ToolTip": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\FCFS.cs",
-              "RelativeToolTip": "FCFS.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T01:28:59.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Principal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\Principal.cs",
-              "RelativeDocumentMoniker": "Principal.cs",
-              "ToolTip": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\Principal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Principal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T01:56:37.727Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SCAN.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\SCAN.cs",
-              "RelativeDocumentMoniker": "SCAN.cs",
-              "ToolTip": "C:\\Users\\Aorus\\OneDrive - Universidad Aut\u00F3noma de Aguascalientes\\3er Semestre\\Sistemas Operativos\\ProyectoSO\\SCAN.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Aorus\\OneDrive - Universidad Aut\u00F3noma de Aguascalientes\\3er Semestre\\Sistemas Operativos\\ProyectoSO\\SCAN.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T02:20:05.026Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CSCAN.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\CSCAN.cs",
-              "RelativeDocumentMoniker": "CSCAN.cs",
-              "ToolTip": "C:\\Users\\Aorus\\OneDrive - Universidad Aut\u00F3noma de Aguascalientes\\3er Semestre\\Sistemas Operativos\\ProyectoSO\\CSCAN.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Aorus\\OneDrive - Universidad Aut\u00F3noma de Aguascalientes\\3er Semestre\\Sistemas Operativos\\ProyectoSO\\CSCAN.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T03:46:46.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FCFS.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\rodri\\Desktop\\ProyectoSO\\ProyectoFinal\\ProyectoSO\\FCFS.cs",
-              "RelativeDocumentMoniker": "FCFS.cs",
-              "ToolTip": "C:\\Users\\Aorus\\OneDrive - Universidad Aut\u00F3noma de Aguascalientes\\3er Semestre\\Sistemas Operativos\\ProyectoSO\\FCFS.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Aorus\\OneDrive - Universidad Aut\u00F3noma de Aguascalientes\\3er Semestre\\Sistemas Operativos\\ProyectoSO\\FCFS.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T01:32:02.253Z"
             }
           ]
         }

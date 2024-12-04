@@ -1,6 +1,6 @@
 namespace ProyectoFinal
 {
-    public partial class Principal : Form
+    public partial class FormMenu : Form
     {
         public class Resultados
         {
@@ -14,7 +14,7 @@ namespace ProyectoFinal
         int posicion = 0;
         Random random = new Random();   // se crea una instancia de random
 
-        public Principal()
+        public FormMenu()
         {
             InitializeComponent();
 
@@ -296,7 +296,7 @@ namespace ProyectoFinal
 
         private void buttonSalir_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            Application.Exit();
         }
     }
 }

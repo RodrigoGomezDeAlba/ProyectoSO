@@ -47,63 +47,76 @@
             // labelResultados
             // 
             labelResultados.AutoSize = true;
-            labelResultados.Location = new Point(33, 18);
+            labelResultados.Font = new Font("Leelawadee UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelResultados.Location = new Point(35, 35);
+            labelResultados.Margin = new Padding(6, 0, 6, 0);
             labelResultados.Name = "labelResultados";
-            labelResultados.Size = new Size(150, 15);
+            labelResultados.Size = new Size(394, 65);
             labelResultados.TabIndex = 0;
-            labelResultados.Text = "Resultados Algoritmo FCFS";
+            labelResultados.Text = "Resultados FCFS";
             // 
             // labelMov
             // 
             labelMov.AutoSize = true;
-            labelMov.Location = new Point(33, 84);
+            labelMov.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelMov.Location = new Point(403, 185);
+            labelMov.Margin = new Padding(6, 0, 6, 0);
             labelMov.Name = "labelMov";
-            labelMov.Size = new Size(100, 15);
+            labelMov.Size = new Size(218, 32);
             labelMov.TabIndex = 1;
-            labelMov.Text = "Movimiento Total";
+            labelMov.Text = "Movimiento Total: ";
             // 
             // labelPos
             // 
             labelPos.AutoSize = true;
-            labelPos.Location = new Point(33, 185);
+            labelPos.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelPos.Location = new Point(61, 185);
+            labelPos.Margin = new Padding(6, 0, 6, 0);
             labelPos.Name = "labelPos";
-            labelPos.Size = new Size(92, 15);
+            labelPos.Size = new Size(185, 32);
             labelPos.TabIndex = 2;
             labelPos.Text = "Posicion Inicial: ";
             // 
             // listBoxCola
             // 
+            listBoxCola.BackColor = Color.White;
             listBoxCola.FormattingEnabled = true;
-            listBoxCola.ItemHeight = 15;
-            listBoxCola.Location = new Point(37, 240);
+            listBoxCola.Location = new Point(61, 223);
+            listBoxCola.Margin = new Padding(6);
             listBoxCola.Name = "listBoxCola";
-            listBoxCola.Size = new Size(146, 154);
+            listBoxCola.Size = new Size(297, 580);
             listBoxCola.TabIndex = 3;
             // 
             // buttonRegresar
             // 
-            buttonRegresar.Location = new Point(691, 400);
+            buttonRegresar.BackColor = Color.FromArgb(255, 255, 192);
+            buttonRegresar.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonRegresar.Location = new Point(1520, 815);
+            buttonRegresar.Margin = new Padding(6);
             buttonRegresar.Name = "buttonRegresar";
-            buttonRegresar.Size = new Size(75, 23);
+            buttonRegresar.Size = new Size(139, 49);
             buttonRegresar.TabIndex = 4;
             buttonRegresar.Text = "Regresar";
-            buttonRegresar.UseVisualStyleBackColor = true;
+            buttonRegresar.UseVisualStyleBackColor = false;
             buttonRegresar.Click += buttonRegresar_Click;
             // 
             // panel1
             // 
             panel1.Controls.Add(formsPlot1);
-            panel1.Location = new Point(276, 18);
+            panel1.Location = new Point(396, 223);
+            panel1.Margin = new Padding(6);
             panel1.Name = "panel1";
-            panel1.Size = new Size(349, 228);
+            panel1.Size = new Size(580, 580);
             panel1.TabIndex = 12;
             // 
             // formsPlot1
             // 
+            formsPlot1.BackColor = Color.LightBlue;
             formsPlot1.DisplayScale = 1F;
             formsPlot1.Location = new Point(0, 0);
+            formsPlot1.Margin = new Padding(6);
             formsPlot1.Name = "formsPlot1";
-            formsPlot1.Size = new Size(349, 228);
+            formsPlot1.Size = new Size(580, 580);
             formsPlot1.TabIndex = 0;
             // 
             // skglControl1
@@ -129,17 +142,21 @@
             // labelPosActual
             // 
             labelPosActual.AutoSize = true;
-            labelPosActual.Location = new Point(691, 45);
+            labelPosActual.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelPosActual.Location = new Point(1015, 185);
+            labelPosActual.Margin = new Padding(6, 0, 6, 0);
             labelPosActual.Name = "labelPosActual";
-            labelPosActual.Size = new Size(38, 15);
+            labelPosActual.Size = new Size(191, 32);
             labelPosActual.TabIndex = 15;
-            labelPosActual.Text = "label1";
+            labelPosActual.Text = "Posicion Actual: ";
             // 
             // panel2
             // 
-            panel2.Location = new Point(700, 67);
+            panel2.BackColor = Color.LightBlue;
+            panel2.Location = new Point(1015, 223);
+            panel2.Margin = new Padding(6);
             panel2.Name = "panel2";
-            panel2.Size = new Size(250, 250);
+            panel2.Size = new Size(580, 580);
             panel2.TabIndex = 14;
             panel2.Paint += panel2_Paint;
             // 
@@ -150,9 +167,10 @@
             // 
             // FCFS
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(958, 488);
+            BackColor = Color.LightBlue;
+            ClientSize = new Size(1674, 879);
             Controls.Add(labelPosActual);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -161,8 +179,10 @@
             Controls.Add(labelPos);
             Controls.Add(labelMov);
             Controls.Add(labelResultados);
+            Margin = new Padding(6);
             Name = "FCFS";
-            Text = "Form4";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FCFS";
             Load += FCFS_Load;
             panel1.ResumeLayout(false);
             ResumeLayout(false);
