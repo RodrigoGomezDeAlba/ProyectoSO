@@ -10,7 +10,7 @@ namespace ProyectoFinal
         const int limite = 5000;        //se declara el maximo de cilindros que se van a usar
         int solicitudesTot = 0;    //se declara el numero de solicitudes que se haran
         int[] solicitudes = null;    //se declara el arreglo que almacenara las solicitudes aleatorias
-        bool arriba = false;    //esta variable es para saber la direccion a donde se movera el cabezal
+        bool derecha = false;    //esta variable es para saber la direccion a donde se movera el cabezal
         int posicion = 0;
         Random random = new Random();   // se crea una instancia de random
 
@@ -67,35 +67,35 @@ namespace ProyectoFinal
             Array.Sort(solicitudes); //Se ordena el arreglo en forma ascendente, para poder realizar el algoritmo de forma correcta
 
             //Se crean dos listas para poder manipular las solicitudes de mejor manera
-            List<int> arriba = new List<int>();
-            List<int> abajo = new List<int>();
+            List<int> derecha = new List<int>();
+            List<int> izquierda = new List<int>();
 
             //Se acomodan las solicitudes en la lista correspondiente
             foreach (var solicitud in solicitudes)
             {
                 if (solicitud < posicion)
                 {
-                    abajo.Add(solicitud);
+                    izquierda.Add(solicitud);
                 }
                 else
                 {
-                    arriba.Add(solicitud);
+                    derecha.Add(solicitud);
                 }
             }
 
             //Se agregan las posiciones de inicio y final del disco para que en la animacion simule correctamente el algoritmo
-            if (!abajo.Contains(0))
+            if (!izquierda.Contains(0))
             {
-                abajo.Add(0);
+                izquierda.Add(0);
             }
-            if (!arriba.Contains(limite - 1))
+            if (!derecha.Contains(limite - 1))
             {
-                arriba.Add(limite - 1);
+                derecha.Add(limite - 1);
             }
 
-            //Se acomodan las solicitudes de abajo en forma descendente
-            abajo.Sort();
-            abajo.Reverse();
+            //Se acomodan las solicitudes de izquierda en forma descendente
+            izquierda.Sort();
+            izquierda.Reverse();
 
             //Se declara una nueva lista donde se almacenaran las dos listas anteriores pero ya ordenadas
             List<int> ordenado = new List<int>();
@@ -104,18 +104,18 @@ namespace ProyectoFinal
             
             ordenado.Add(posicion);
 
-            //direccion hacia arriba
+            //direccion hacia derecha
 
             if (direccion)
             {
-                ordenado.AddRange(arriba);
-                ordenado.AddRange(abajo);
+                ordenado.AddRange(derecha);
+                ordenado.AddRange(izquierda);
 
             }
             else
             {
-                ordenado.AddRange(abajo);
-                ordenado.AddRange(arriba);
+                ordenado.AddRange(izquierda);
+                ordenado.AddRange(derecha);
             }
 
             int movTot = Math.Abs(posicion - ordenado[0]);
@@ -135,54 +135,54 @@ namespace ProyectoFinal
             Array.Sort(solicitudes); // Se ordena el arreglo en forma ascendente
 
             // Se crean dos listas para dividir las solicitudes
-            List<int> arriba = new List<int>();
-            List<int> abajo = new List<int>();
+            List<int> derecha = new List<int>();
+            List<int> izquierda = new List<int>();
 
             // Clasificar las solicitudes en las listas correspondientes
             foreach (var solicitud in solicitudes)
             {
                 if (solicitud < posicion)
                 {
-                    abajo.Add(solicitud);
+                    izquierda.Add(solicitud);
                 }
                 else
                 {
-                    arriba.Add(solicitud);
+                    derecha.Add(solicitud);
                 }
             }
 
             // Agregar los límites del disco para simular correctamente el algoritmo
-            if (!abajo.Contains(0))
+            if (!izquierda.Contains(0))
             {
-                abajo.Add(0);
+                izquierda.Add(0);
             }
-            if (!arriba.Contains(limite - 1))
+            if (!derecha.Contains(limite - 1))
             {
-                arriba.Add(limite - 1);
+                derecha.Add(limite - 1);
             }
 
             // Ordenar las listas
-            abajo.Sort();
-            arriba.Sort();
+            izquierda.Sort();
+            derecha.Sort();
 
             // Lista final para solicitudes ordenadas
             List<int> ordenado = new List<int>();
 
             ordenado.Add(posicion);
-            // Dirección hacia arriba
+            // Dirección hacia derecha
             if (direccion)
             {
-                // Recorrer hacia arriba, saltar al inicio, y recorrer hacia arriba nuevamente
-                ordenado.AddRange(arriba);
-                ordenado.AddRange(abajo);
+                // Recorrer hacia derecha, saltar al inicio, y recorrer hacia derecha nuevamente
+                ordenado.AddRange(derecha);
+                ordenado.AddRange(izquierda);
             }
             else
             {
-                // Dirección hacia abajo
-                // Recorrer hacia abajo, saltar al final, y recorrer hacia abajo nuevamente
-                abajo.Reverse(); // Ordenar la lista abajo en orden descendente
-                ordenado.AddRange(abajo);
-                ordenado.AddRange(arriba);
+                // Dirección hacia izquierda
+                // Recorrer hacia izquierda, saltar al final, y recorrer hacia izquierda nuevamente
+                izquierda.Reverse(); // Ordenar la lista izquierda en orden descendente
+                ordenado.AddRange(izquierda);
+                ordenado.AddRange(derecha);
             }
 
             // Calcular movimientos totales
@@ -197,7 +197,7 @@ namespace ProyectoFinal
             return new Resultados { ListaOrdenada = ordenado, movimientosTotales = movTot };
         }
 
-        private void radioButtonArriba_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonDerecha_CheckedChanged(object sender, EventArgs e)
         {
 
         }
@@ -237,13 +237,13 @@ namespace ProyectoFinal
             solicitudes = generarAleatorios(solicitudesTot, limite, random);
 
             //Comprueba que opcion se eligio en la direccion del cabezal
-            if (radioButtonArriba.Checked)
+            if (radioButtonDerecha.Checked)
             {
-                arriba = true;
+                derecha = true;
             }
-            else if (radioButtonAbajo.Checked)
+            else if (radioButtonIzquierda.Checked)
             {
-                arriba = false;
+                derecha = false;
             }
             else
             {
@@ -266,7 +266,7 @@ namespace ProyectoFinal
             {
                 //aqui se abriria la pantalla de este algoritmo
                 int[] solicitudesOriginales = (int[])solicitudes.Clone();
-                var resultado = algoritmoSCAN(posicion, solicitudes, arriba, limite); //esta linea es para que se haga un tipo de variable para poder pasar los datos
+                var resultado = algoritmoSCAN(posicion, solicitudes, derecha, limite); //esta linea es para que se haga un tipo de variable para poder pasar los datos
                 FormSCAN Res = new FormSCAN(resultado.ListaOrdenada, resultado.movimientosTotales, posicion, solicitudesOriginales);
                 this.Hide();
                 Res.ShowDialog();
@@ -278,7 +278,7 @@ namespace ProyectoFinal
             {
                 //aqui se abriria la pantalla de este algoritmo
                 int[] solicitudesOriginales = (int[])solicitudes.Clone();
-                var resultado = algoritmoCSCAN(posicion, solicitudes, arriba, limite); // Ejecuta el algoritmo C-SCAN
+                var resultado = algoritmoCSCAN(posicion, solicitudes, derecha, limite); // Ejecuta el algoritmo C-SCAN
                 FormCSCAN Res = new FormCSCAN(resultado.ListaOrdenada, resultado.movimientosTotales, posicion, solicitudesOriginales); // Llama a la pantalla C-SCAN
                 this.Hide();
                 Res.ShowDialog();

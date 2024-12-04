@@ -33,6 +33,7 @@
             labelTitulo = new Label();
             labelPosIn = new Label();
             listBoxCola = new ListBox();
+            formsPlot1 = new ScottPlot.WinForms.FormsPlot();
             SuspendLayout();
             // 
             // labelMov
@@ -80,14 +81,24 @@
             listBoxCola.FormattingEnabled = true;
             listBoxCola.Location = new Point(42, 458);
             listBoxCola.Name = "listBoxCola";
-            listBoxCola.Size = new Size(202, 164);
+            listBoxCola.Size = new Size(202, 356);
             listBoxCola.TabIndex = 8;
+            // 
+            // formsPlot1
+            // 
+            formsPlot1.DisplayScale = 1F;
+            formsPlot1.Location = new Point(608, 189);
+            formsPlot1.Margin = new Padding(6);
+            formsPlot1.Name = "formsPlot1";
+            formsPlot1.Size = new Size(648, 486);
+            formsPlot1.TabIndex = 9;
             // 
             // FormCSCAN
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1378, 866);
+            Controls.Add(formsPlot1);
             Controls.Add(listBoxCola);
             Controls.Add(labelPosIn);
             Controls.Add(labelMov);
@@ -107,5 +118,6 @@
         private Label labelTitulo;
         private Label labelPosIn;
         private ListBox listBoxCola;
+        private ScottPlot.WinForms.FormsPlot formsPlot1;
     }
 }

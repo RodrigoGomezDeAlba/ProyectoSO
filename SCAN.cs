@@ -33,11 +33,12 @@ namespace ProyectoFinal
             this.solicitudesOriginales = originales.ToList();   //se pasa la lista con las solicitudes en desorden
             this.mov = movTot;  //se pasa el movimiento total del cabezal
             this.posInicial = posicion; //se pasa la posicion inicial del cabezal
+
             totalSolicitudes = solicitudes.Count;   //se saca el total de solicitudes
             double[] valoresY = new double[totalSolicitudes];   //se crea un vector de tipo double para poder pasarlo a la grafica
             for(int i=0; i<totalSolicitudes; i++)   //se llena el vector desde 1 hasta el total de solicitudes
             {
-                valoresY[i] = i+1;
+                valoresY[i] = i;
             }
             double[] vectorX = ordenada.ConvertAll(item => (double)item).ToArray(); //se convierte la lista ordena a double y a vector para pasarlo a la grafica
             InitializeComponent();
@@ -45,7 +46,7 @@ namespace ProyectoFinal
 
             // Configura el gráfico
             formsPlot1.Plot.Title("Movimiento del cabezal");
-            formsPlot1.Plot.XLabel("Posicion del cabezal");
+            formsPlot1.Plot.XLabel("Posición del cabezal");
             formsPlot1.Plot.YLabel("Solicitudes");
 
             // Actualiza para mostrar los cambios
