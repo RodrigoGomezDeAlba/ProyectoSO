@@ -46,10 +46,9 @@
             // 
             labelTitulo.AutoSize = true;
             labelTitulo.Font = new Font("Leelawadee UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelTitulo.Location = new Point(35, 35);
-            labelTitulo.Margin = new Padding(6, 0, 6, 0);
+            labelTitulo.Location = new Point(19, 16);
             labelTitulo.Name = "labelTitulo";
-            labelTitulo.Size = new Size(416, 65);
+            labelTitulo.Size = new Size(210, 32);
             labelTitulo.TabIndex = 0;
             labelTitulo.Text = "Resultados SCAN";
             // 
@@ -57,10 +56,9 @@
             // 
             buttonRegresar.BackColor = Color.FromArgb(255, 255, 192);
             buttonRegresar.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonRegresar.Location = new Point(1520, 815);
-            buttonRegresar.Margin = new Padding(6);
+            buttonRegresar.Location = new Point(818, 382);
             buttonRegresar.Name = "buttonRegresar";
-            buttonRegresar.Size = new Size(139, 49);
+            buttonRegresar.Size = new Size(75, 23);
             buttonRegresar.TabIndex = 1;
             buttonRegresar.Text = "Regresar";
             buttonRegresar.UseVisualStyleBackColor = false;
@@ -70,10 +68,9 @@
             // 
             labelMov.AutoSize = true;
             labelMov.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelMov.Location = new Point(403, 185);
-            labelMov.Margin = new Padding(6, 0, 6, 0);
+            labelMov.Location = new Point(217, 87);
             labelMov.Name = "labelMov";
-            labelMov.Size = new Size(218, 32);
+            labelMov.Size = new Size(107, 15);
             labelMov.TabIndex = 2;
             labelMov.Text = "Movimiento Total: ";
             labelMov.Click += labelMov_Click;
@@ -81,30 +78,30 @@
             // listBoxCola
             // 
             listBoxCola.FormattingEnabled = true;
-            listBoxCola.Location = new Point(61, 223);
-            listBoxCola.Margin = new Padding(4, 2, 4, 2);
+            listBoxCola.ItemHeight = 15;
+            listBoxCola.Location = new Point(33, 105);
+            listBoxCola.Margin = new Padding(2, 1, 2, 1);
             listBoxCola.Name = "listBoxCola";
-            listBoxCola.Size = new Size(297, 580);
+            listBoxCola.Size = new Size(162, 274);
             listBoxCola.TabIndex = 10;
             // 
             // labelPosIn
             // 
             labelPosIn.AutoSize = true;
             labelPosIn.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelPosIn.Location = new Point(61, 185);
-            labelPosIn.Margin = new Padding(4, 0, 4, 0);
+            labelPosIn.Location = new Point(33, 87);
+            labelPosIn.Margin = new Padding(2, 0, 2, 0);
             labelPosIn.Name = "labelPosIn";
-            labelPosIn.Size = new Size(185, 32);
+            labelPosIn.Size = new Size(93, 15);
             labelPosIn.TabIndex = 9;
             labelPosIn.Text = "Posicion Inicial: ";
             // 
             // panel1
             // 
             panel1.Controls.Add(formsPlot1);
-            panel1.Location = new Point(396, 223);
-            panel1.Margin = new Padding(6);
+            panel1.Location = new Point(213, 105);
             panel1.Name = "panel1";
-            panel1.Size = new Size(580, 580);
+            panel1.Size = new Size(312, 272);
             panel1.TabIndex = 11;
             // 
             // formsPlot1
@@ -112,18 +109,16 @@
             formsPlot1.BackColor = Color.LightBlue;
             formsPlot1.DisplayScale = 1F;
             formsPlot1.Location = new Point(0, 0);
-            formsPlot1.Margin = new Padding(6);
             formsPlot1.Name = "formsPlot1";
-            formsPlot1.Size = new Size(580, 580);
+            formsPlot1.Size = new Size(312, 272);
             formsPlot1.TabIndex = 0;
             formsPlot1.Load += formsPlot1_Load;
             // 
             // panel2
             // 
-            panel2.Location = new Point(1015, 223);
-            panel2.Margin = new Padding(6);
+            panel2.Location = new Point(547, 105);
             panel2.Name = "panel2";
-            panel2.Size = new Size(580, 580);
+            panel2.Size = new Size(250, 250);
             panel2.TabIndex = 12;
             panel2.Paint += panel2_Paint;
             // 
@@ -136,19 +131,18 @@
             // 
             labelPosActual.AutoSize = true;
             labelPosActual.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelPosActual.Location = new Point(1015, 185);
-            labelPosActual.Margin = new Padding(6, 0, 6, 0);
+            labelPosActual.Location = new Point(547, 87);
             labelPosActual.Name = "labelPosActual";
-            labelPosActual.Size = new Size(191, 32);
+            labelPosActual.Size = new Size(95, 15);
             labelPosActual.TabIndex = 13;
             labelPosActual.Text = "Posicion Actual: ";
             // 
             // FormSCAN
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightBlue;
-            ClientSize = new Size(1674, 879);
+            ClientSize = new Size(901, 412);
             Controls.Add(labelPosActual);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -157,7 +151,6 @@
             Controls.Add(labelMov);
             Controls.Add(buttonRegresar);
             Controls.Add(labelTitulo);
-            Margin = new Padding(6);
             Name = "FormSCAN";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SCAN";

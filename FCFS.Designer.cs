@@ -48,10 +48,9 @@
             // 
             labelResultados.AutoSize = true;
             labelResultados.Font = new Font("Leelawadee UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelResultados.Location = new Point(35, 35);
-            labelResultados.Margin = new Padding(6, 0, 6, 0);
+            labelResultados.Location = new Point(19, 16);
             labelResultados.Name = "labelResultados";
-            labelResultados.Size = new Size(394, 65);
+            labelResultados.Size = new Size(198, 32);
             labelResultados.TabIndex = 0;
             labelResultados.Text = "Resultados FCFS";
             // 
@@ -59,10 +58,9 @@
             // 
             labelMov.AutoSize = true;
             labelMov.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelMov.Location = new Point(403, 185);
-            labelMov.Margin = new Padding(6, 0, 6, 0);
+            labelMov.Location = new Point(217, 87);
             labelMov.Name = "labelMov";
-            labelMov.Size = new Size(218, 32);
+            labelMov.Size = new Size(107, 15);
             labelMov.TabIndex = 1;
             labelMov.Text = "Movimiento Total: ";
             // 
@@ -70,10 +68,9 @@
             // 
             labelPos.AutoSize = true;
             labelPos.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelPos.Location = new Point(61, 185);
-            labelPos.Margin = new Padding(6, 0, 6, 0);
+            labelPos.Location = new Point(33, 87);
             labelPos.Name = "labelPos";
-            labelPos.Size = new Size(185, 32);
+            labelPos.Size = new Size(93, 15);
             labelPos.TabIndex = 2;
             labelPos.Text = "Posicion Inicial: ";
             // 
@@ -81,20 +78,19 @@
             // 
             listBoxCola.BackColor = Color.White;
             listBoxCola.FormattingEnabled = true;
-            listBoxCola.Location = new Point(61, 223);
-            listBoxCola.Margin = new Padding(6);
+            listBoxCola.ItemHeight = 15;
+            listBoxCola.Location = new Point(33, 105);
             listBoxCola.Name = "listBoxCola";
-            listBoxCola.Size = new Size(297, 580);
+            listBoxCola.Size = new Size(162, 274);
             listBoxCola.TabIndex = 3;
             // 
             // buttonRegresar
             // 
             buttonRegresar.BackColor = Color.FromArgb(255, 255, 192);
             buttonRegresar.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonRegresar.Location = new Point(1520, 815);
-            buttonRegresar.Margin = new Padding(6);
+            buttonRegresar.Location = new Point(818, 382);
             buttonRegresar.Name = "buttonRegresar";
-            buttonRegresar.Size = new Size(139, 49);
+            buttonRegresar.Size = new Size(75, 23);
             buttonRegresar.TabIndex = 4;
             buttonRegresar.Text = "Regresar";
             buttonRegresar.UseVisualStyleBackColor = false;
@@ -103,10 +99,9 @@
             // panel1
             // 
             panel1.Controls.Add(formsPlot1);
-            panel1.Location = new Point(396, 223);
-            panel1.Margin = new Padding(6);
+            panel1.Location = new Point(213, 105);
             panel1.Name = "panel1";
-            panel1.Size = new Size(580, 580);
+            panel1.Size = new Size(312, 272);
             panel1.TabIndex = 12;
             // 
             // formsPlot1
@@ -114,9 +109,8 @@
             formsPlot1.BackColor = Color.LightBlue;
             formsPlot1.DisplayScale = 1F;
             formsPlot1.Location = new Point(0, 0);
-            formsPlot1.Margin = new Padding(6);
             formsPlot1.Name = "formsPlot1";
-            formsPlot1.Size = new Size(580, 580);
+            formsPlot1.Size = new Size(312, 272);
             formsPlot1.TabIndex = 0;
             // 
             // skglControl1
@@ -143,20 +137,18 @@
             // 
             labelPosActual.AutoSize = true;
             labelPosActual.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelPosActual.Location = new Point(1015, 185);
-            labelPosActual.Margin = new Padding(6, 0, 6, 0);
+            labelPosActual.Location = new Point(547, 87);
             labelPosActual.Name = "labelPosActual";
-            labelPosActual.Size = new Size(191, 32);
+            labelPosActual.Size = new Size(95, 15);
             labelPosActual.TabIndex = 15;
             labelPosActual.Text = "Posicion Actual: ";
             // 
             // panel2
             // 
             panel2.BackColor = Color.LightBlue;
-            panel2.Location = new Point(1015, 223);
-            panel2.Margin = new Padding(6);
+            panel2.Location = new Point(547, 105);
             panel2.Name = "panel2";
-            panel2.Size = new Size(580, 580);
+            panel2.Size = new Size(250, 250);
             panel2.TabIndex = 14;
             panel2.Paint += panel2_Paint;
             // 
@@ -167,10 +159,10 @@
             // 
             // FCFS
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightBlue;
-            ClientSize = new Size(1674, 879);
+            ClientSize = new Size(901, 412);
             Controls.Add(labelPosActual);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -179,7 +171,6 @@
             Controls.Add(labelPos);
             Controls.Add(labelMov);
             Controls.Add(labelResultados);
-            Margin = new Padding(6);
             Name = "FCFS";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FCFS";
