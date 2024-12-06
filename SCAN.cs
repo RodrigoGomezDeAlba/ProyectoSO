@@ -181,7 +181,7 @@ namespace ProyectoFinal
                 radioCabezal = 100;
             }else if (posicionActual >= 2000 && posicionActual < 2500)
             {
-                radioCabezal = 114;
+                radioCabezal = 124;
             }else if (posicionActual >= 2500 && posicionActual < 3000)
             {
                 radioCabezal = 150;
@@ -229,6 +229,5 @@ namespace ProyectoFinal
                 labelPosActual.Text = "Movimiento finalizado.";
             }
         }
-
     }
 }

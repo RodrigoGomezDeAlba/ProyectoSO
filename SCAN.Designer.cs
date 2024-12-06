@@ -114,7 +114,7 @@
             formsPlot1.Location = new Point(0, 0);
             formsPlot1.Margin = new Padding(6, 6, 6, 6);
             formsPlot1.Name = "formsPlot1";
-            formsPlot1.Size = new Size(579, 580);
+            formsPlot1.Size = new Size(580, 580);
             formsPlot1.TabIndex = 0;
             formsPlot1.Load += formsPlot1_Load;
             // 

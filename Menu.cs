@@ -236,20 +236,8 @@ namespace ProyectoFinal
             //Se generan las solicitudes aleatorias
             solicitudes = generarAleatorios(solicitudesTot, limite, random);
 
-            //Comprueba que opcion se eligio en la direccion del cabezal
-            if (radioButtonDerecha.Checked)
-            {
-                derecha = true;
-            }
-            else if (radioButtonIzquierda.Checked)
-            {
-                derecha = false;
-            }
-            else
-            {
-                MessageBox.Show("Selecciona una direccion");
-                return;
-            }
+            //se establece la direccion de forma fija
+            derecha = true;
 
             //Comprueba que algoritmo se eligio
             if (radioButtonFCFS.Checked)

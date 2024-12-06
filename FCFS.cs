@@ -149,7 +149,7 @@ namespace ProyectoFinal
             }
             else if (posicionActual >= 2000 && posicionActual < 2500)
             {
-                radioCabezal = 114;
+                radioCabezal = 124;
             }
             else if (posicionActual >= 2500 && posicionActual < 3000)
             {

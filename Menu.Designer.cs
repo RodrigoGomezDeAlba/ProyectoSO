@@ -30,9 +30,6 @@
         {
             labelTitulo = new Label();
             textBoxPosicion = new TextBox();
-            groupBoxDireccion = new GroupBox();
-            radioButtonIzquierda = new RadioButton();
-            radioButtonDerecha = new RadioButton();
             textBoxSolicitudes = new TextBox();
             buttonEjecutar = new Button();
             groupBoxAlgoritmo = new GroupBox();
@@ -40,7 +37,6 @@
             radioButtonSCAN = new RadioButton();
             radioButtonFCFS = new RadioButton();
             buttonSalir = new Button();
-            groupBoxDireccion.SuspendLayout();
             groupBoxAlgoritmo.SuspendLayout();
             SuspendLayout();
             // 
@@ -60,7 +56,7 @@
             // textBoxPosicion
             // 
             textBoxPosicion.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxPosicion.Location = new Point(127, 409);
+            textBoxPosicion.Location = new Point(328, 409);
             textBoxPosicion.Margin = new Padding(6);
             textBoxPosicion.Name = "textBoxPosicion";
             textBoxPosicion.PlaceholderText = "Ingresa la posición del cabezal";
@@ -69,51 +65,10 @@
             textBoxPosicion.TextAlign = HorizontalAlignment.Center;
             textBoxPosicion.TextChanged += textBoxPosicion_TextChanged;
             // 
-            // groupBoxDireccion
-            // 
-            groupBoxDireccion.Controls.Add(radioButtonIzquierda);
-            groupBoxDireccion.Controls.Add(radioButtonDerecha);
-            groupBoxDireccion.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBoxDireccion.Location = new Point(982, 394);
-            groupBoxDireccion.Margin = new Padding(6);
-            groupBoxDireccion.Name = "groupBoxDireccion";
-            groupBoxDireccion.Padding = new Padding(6);
-            groupBoxDireccion.Size = new Size(321, 154);
-            groupBoxDireccion.TabIndex = 2;
-            groupBoxDireccion.TabStop = false;
-            groupBoxDireccion.Text = "Dirección del cabezal";
-            // 
-            // radioButtonIzquierda
-            // 
-            radioButtonIzquierda.AutoSize = true;
-            radioButtonIzquierda.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButtonIzquierda.Location = new Point(12, 107);
-            radioButtonIzquierda.Margin = new Padding(6);
-            radioButtonIzquierda.Name = "radioButtonIzquierda";
-            radioButtonIzquierda.Size = new Size(146, 36);
-            radioButtonIzquierda.TabIndex = 1;
-            radioButtonIzquierda.TabStop = true;
-            radioButtonIzquierda.Text = "Izquierda";
-            radioButtonIzquierda.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonDerecha
-            // 
-            radioButtonDerecha.AutoSize = true;
-            radioButtonDerecha.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            radioButtonDerecha.Location = new Point(12, 59);
-            radioButtonDerecha.Margin = new Padding(6);
-            radioButtonDerecha.Name = "radioButtonDerecha";
-            radioButtonDerecha.Size = new Size(135, 36);
-            radioButtonDerecha.TabIndex = 0;
-            radioButtonDerecha.TabStop = true;
-            radioButtonDerecha.Text = "Derecha";
-            radioButtonDerecha.UseVisualStyleBackColor = true;
-            radioButtonDerecha.CheckedChanged += radioButtonDerecha_CheckedChanged;
-            // 
             // textBoxSolicitudes
             // 
             textBoxSolicitudes.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBoxSolicitudes.Location = new Point(127, 495);
+            textBoxSolicitudes.Location = new Point(328, 495);
             textBoxSolicitudes.Margin = new Padding(6);
             textBoxSolicitudes.Name = "textBoxSolicitudes";
             textBoxSolicitudes.PlaceholderText = "¿Cuantas solicitudes quieres?";
@@ -141,7 +96,7 @@
             groupBoxAlgoritmo.Controls.Add(radioButtonSCAN);
             groupBoxAlgoritmo.Controls.Add(radioButtonFCFS);
             groupBoxAlgoritmo.Font = new Font("Segoe UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBoxAlgoritmo.Location = new Point(572, 394);
+            groupBoxAlgoritmo.Location = new Point(773, 394);
             groupBoxAlgoritmo.Margin = new Padding(6);
             groupBoxAlgoritmo.Name = "groupBoxAlgoritmo";
             groupBoxAlgoritmo.Padding = new Padding(6);
@@ -212,15 +167,12 @@
             Controls.Add(groupBoxAlgoritmo);
             Controls.Add(buttonEjecutar);
             Controls.Add(textBoxSolicitudes);
-            Controls.Add(groupBoxDireccion);
             Controls.Add(textBoxPosicion);
             Controls.Add(labelTitulo);
             Margin = new Padding(6);
             Name = "FormMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu";
-            groupBoxDireccion.ResumeLayout(false);
-            groupBoxDireccion.PerformLayout();
             groupBoxAlgoritmo.ResumeLayout(false);
             groupBoxAlgoritmo.PerformLayout();
             ResumeLayout(false);
@@ -231,9 +183,6 @@
 
         private Label labelTitulo;
         private TextBox textBoxPosicion;
-        private GroupBox groupBoxDireccion;
-        private RadioButton radioButtonDerecha;
-        private RadioButton radioButtonIzquierda;
         private TextBox textBoxSolicitudes;
         private Button buttonEjecutar;
         private GroupBox groupBoxAlgoritmo;
